@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module"></script>
+</head>
+
+<body>
+  <main>
+    <div class="component">
+      <header class="component-header flex-between">
+        <div>
+          <h1 class="component-header-title">My balance</h1>
+          <strong class="balance">$921.48</strong>
+        </div>
+        <div class="circles">
+          <div class="circle empty-circle"></div>
+          <div class="circle full-circle"></div>
+        </div>
+      </header>
+      <div class="component-body">
+        <h2 class="component-body-title">Spending - Last 7 days</h2>
+        <div class="charts">
+        </div>
+        <div class="component-footer flex-between">
+          <div>
+            <p class="component-footer-text">Total this month</p>
+            <strong class="total">$478.33</strong>
+          </div>
+          <div class="profit-wrapper">
+            <p class="profit">+2.4%</p>
+            <p class="component-footer-text">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
