@@ -1,3 +1,4 @@
+const nums = document.querySelectorAll('.animated-num')
 const data = [
     {
         "day": "mon",
@@ -41,3 +42,20 @@ function generateCharts() {
     </div>
     `).join('')
 }
+
+nums.forEach(num => {
+    const speed = 50
+    const animate = () => {
+        const value = +num.getAttribute('target-num')
+        const data = +num.innerText
+
+        const time = value / speed
+        if (data < value) {
+            num.innerText = Math.ceil(data + time)
+            setTimeout(animate, 1)
+        } else {
+            num.innerText = value
+        }
+    }
+    animate()
+})
